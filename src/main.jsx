@@ -1,10 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Display } from './App.jsx'
+import { Display } from '../src/components/App'
 import './index.css'
+import { BrowserRouter} from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Display title={"My App"} description={"Opher Ha Ha "}/>
-  </React.StrictMode>,
+    <BrowserRouter>
+      <Display/>
+    </BrowserRouter>
+  </React.StrictMode> 
 )
