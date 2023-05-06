@@ -19,47 +19,56 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+/*color: #535bf2;*/
 a:hover {
-  color: #535bf2;
+  color: #f9f9f9;
 }
 
 body {
   margin: 0;
-  display: flex;
+  display: flexbox;
   place-items: center;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.2em;
   line-height: 1.1;
+  text-align: center;
+  padding-top: 1rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+h4{
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.1;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #f9f9f9;
   }
   button {
     background-color: #f9f9f9;
@@ -71,8 +80,150 @@ button:focus-visible {
   background: #242424;
   padding: 0.8rem;
   margin: 0;
-  width: 100%;
+  display: flexbox;
+  text-align: center;
 }
+
 .NavBar .navlink{
   padding: 2rem;
+}
+
+.NavBar .log{
+  margin-left: 18rem;
+  position: absolute;
+}
+
+.NavBar img{
+  margin-left: -22rem;
+  margin-top: -0.7rem;
+  position: absolute;
+}
+/*=================================================Log In========================================================================================*/
+.Loginbody{
+  background-image: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    #646cff 50%,
+    #646cff 100%
+  );
+  height: 100vh;
+  overflow: hidden;
+}
+.Loginform{
+  margin-top: 13rem;
+  margin-left: 10rem;
+}
+.Loginform img{
+  margin-top: -8rem;
+  margin-left: 2rem;
+  position: absolute;
+}
+.Loginform label{
+  font-size: 28px;
+  font-weight: 700;
+}
+.Loginform input{
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 20rem;
+  margin-top: 3rem;
+  border-style: none;
+  letter-spacing: 1px;
+  border-bottom: #242424 2px solid;
+}
+.Loginform .emailicon{
+  position: absolute;
+  margin-top: 3rem;
+}
+.Loginform .lockicon{
+  position: absolute;
+  margin-top: 3rem;
+}
+.Loginform button{
+  margin-top: 3rem;
+  width: 20rem;
+  height: 1.7rem;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #f9f9f9;
+  background: #213547;
+}
+.Loginform button:hover{
+  background: #646cff;
+}
+/*=================================================Signup==============================================================*/
+.Signupform{
+  margin-left: 47rem;
+  margin-top: -26.64rem;
+}
+.Signupform label{
+  font-size: 28px;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+.Signupform p{
+  font-size: 16px;
+  margin-left: 1rem;
+  color: #f9f9f9;
+  letter-spacing: 1px;
+}
+.Signupform input{
+  padding: 0.5rem;
+  border-style: none;
+  border-bottom: black 2px solid;
+  background: none;
+  margin: 1rem;
+  margin-top: 2rem;
+  width: 15rem;
+  font-size: 16px;
+}
+.Signupform input::placeholder{
+  color:#f9f9f9;
+}
+.Signupform button{
+  margin-top: 3rem;
+  width: 16rem;
+  height: 1.7rem;
+  margin-left: 0.7rem;
+  border-radius: 10px;
+  background: black;
+  color: #f9f9f9;
+  font-size: 16px;
+  cursor: pointer;
+}
+.ClearJson{
+  width: 4rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+}
+.NewUser{
+  margin-left: 46rem;
+  color: #f9f9f9;
+}
+/*=================================Blog Page=========================================================*/
+.Blogbody h2{
+  font-size: 20px;
+}
+.Blog_gridholder{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: -1rem;
+}
+.Blog_gridholder div{
+  margin: 10px;
+  padding: 10px;
+  flex: 50%;
+}
+@media (max-width: 800px) {
+  .Blog_gridholder {
+    flex-direction: column;
+  }
+}
+.Blog_gridholder div img{
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px #8888;
+  border-radius: 10px;
 }
