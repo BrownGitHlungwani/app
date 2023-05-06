@@ -1,7 +1,8 @@
 export function About() {
     return(
-        <>
-         <h1>About Page</h1>
-        </>
+        <div className="allbody">
+          <h1>Support center</h1>
+          <h4>Learn about different global sculptures.</h4>
+        </div>
     );
 }

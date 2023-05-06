@@ -1,7 +1,7 @@
 export function Products(){
     return(
         <>
-        <h1>Our Products</h1>
+          <h1>Our Products</h1>
         </>
     );
 }
