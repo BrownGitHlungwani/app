@@ -95,9 +95,79 @@ h4{
 
 .NavBar img{
   margin-left: -22rem;
-  margin-top: -0.7rem;
+  margin-top: -2.8rem;
   position: absolute;
 }
+.icon_shop_search_holder{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.icon_shop_search_holder img{
+  margin-right: 3rem;
+}
+.icon_shop_search_holder input{
+  margin-left: -18.2rem;
+  margin-top: 0.2rem;
+  height: 1.5rem;
+  padding: 0.7rem;
+  width: 18rem;
+  position: absolute;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  color: #213547;
+  font-weight: 550;
+}
+.imager img{
+  margin-top: -1rem;
+  margin-left: 2rem;
+  z-index: -1;
+}
+.index_center_content{
+  position: absolute;
+  margin-left: 40rem;
+  margin-top: 1rem;
+  width: 30rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.index_center_content h2{
+  font-size: 2.8rem;
+  height: 1.1;
+}
+.index_center_content p{
+  text-align: left;
+}
+.index_center_content button{
+  margin-top: 3rem;
+  width: 12rem;
+  height: 2rem;
+  font-size: 16px;
+  font-weight: 550;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background:#646cff;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px #8888;
+}
+.index_center_content button:hover{
+  background: #213547;
+  color: #f9f9f9;
+}
+.indexbody ul{
+  position: absolute;
+  right: 0;
+  margin-right: 2rem;
+  margin-top: 13.5rem;
+  list-style: none;
+}
+.indexbody ul li{
+  padding: 1rem;
+  cursor: pointer;
+}
+
 /*=================================================Log In========================================================================================*/
 .Loginbody{
   background-image: linear-gradient(
@@ -107,7 +177,7 @@ h4{
     #646cff 50%,
     #646cff 100%
   );
-  height: 100vh;
+  height: 35.95rem;
   overflow: hidden;
 }
 .Loginform{
@@ -193,6 +263,9 @@ h4{
   font-size: 16px;
   cursor: pointer;
 }
+.Signupform button:hover{
+  background:#213547;
+}
 .ClearJson{
   width: 4rem;
   margin-top: 1rem;
@@ -206,6 +279,7 @@ h4{
 /*=================================Blog Page=========================================================*/
 .Blogbody h2{
   font-size: 20px;
+  cursor: pointer;
 }
 .Blog_gridholder{
   display: flex;
@@ -226,4 +300,21 @@ h4{
 .Blog_gridholder div img{
   box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px #8888;
   border-radius: 10px;
+}
+/*================================================Promo=====================================================*/
+.Promopage .logout_button{
+  position: absolute;
+  right: 0;
+  margin-right: 3.5rem;
+  margin-top: -3.7rem;
+  padding: 5px;
+  background: #242424;
+  color:#646cff;
+  font-size: 16px;
+  border: none;
+  font-weight: 550;
+  cursor: pointer;
+}
+.Promopage .logout_button:hover{
+  color: #f1f1f1;
 }
