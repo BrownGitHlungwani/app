@@ -4,5 +4,6 @@ export * from '../blog'
 export * from '../products'
 export * from '../login'
 export * from '../signup'
+export * from '../promotions'
 
 
