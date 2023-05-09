@@ -16,12 +16,12 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #c0c3fc;
   text-decoration: inherit;
 }
 /*color: #535bf2;*/
 a:hover {
-  color: #f9f9f9;
+  color:rgb(107, 245, 231);
 }
 
 body {
@@ -212,13 +212,15 @@ h4{
 }
 .Loginform button{
   margin-top: 3rem;
-  width: 20rem;
-  height: 1.7rem;
+  width: 21rem;
+  height: 1.9rem;
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
   color: #f9f9f9;
   background: #213547;
+  border: none;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px #8888;
 }
 .Loginform button:hover{
   background: #646cff;
@@ -226,12 +228,13 @@ h4{
 /*=================================================Signup==============================================================*/
 .Signupform{
   margin-left: 47rem;
-  margin-top: -26.64rem;
+  margin-top: -26.66rem;
 }
 .Signupform label{
   font-size: 28px;
   font-weight: 700;
   margin-left: 1rem;
+  color:whitesmoke;
 }
 .Signupform p{
   font-size: 16px;
@@ -255,13 +258,15 @@ h4{
 .Signupform button{
   margin-top: 3rem;
   width: 16rem;
-  height: 1.7rem;
+  height: 1.8rem;
   margin-left: 0.7rem;
   border-radius: 10px;
   background: black;
   color: #f9f9f9;
   font-size: 16px;
   cursor: pointer;
+  border: none;
+  box-shadow: -3px -3px 7px #b9b8b8b2, 3px 3px 5px #8888;
 }
 .Signupform button:hover{
   background:#213547;
@@ -309,7 +314,7 @@ h4{
   margin-top: -3.7rem;
   padding: 5px;
   background: #242424;
-  color:#646cff;
+  
   font-size: 16px;
   border: none;
   font-weight: 550;
