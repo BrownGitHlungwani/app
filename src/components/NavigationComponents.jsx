@@ -1,10 +1,9 @@
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/Logo_GD2.png"
 
 export function NavigationComponent(){
     return(
         <div className="NavBar">
-           <img width={120} height={120} src={Logo} alt="" />
+           <img width={120} height={120} src={"/Logo_GD.png"} alt="" />
 
            <NavLink className="navlink" to="/">Home</NavLink>
            <NavLink className="navlink" to="/about">About</NavLink>
