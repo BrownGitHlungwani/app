@@ -1,0 +1,51 @@
+export const Blog_grid = [
+    {   
+        id: 1,
+        name: "Motherboard",
+        description: "Get exclusive gaming boards with magnificent design and complex perfomance support.",
+        image: "https://c4.wallpaperflare.com/wallpaper/215/96/35/msi-motherboards-computer-technology-wallpaper-preview.jpg",
+        alt:"pic1",
+        agent: "Angel Mother",
+        definition:  "A computer’s motherboard is typically the largest printed circuit board in a machine’s chassis. It distributes electricity and facilitates communication between and to the central processing unit (CPU), random access memory (RAM), and any other component of the computer’s hardware. There is a broad range of motherboards, each of which is intended to be compatible with a specific model and size of the computer.",
+        types: [
+            "Standard ATX motherboard, is an enhanced version of the AT motherboard that Intel created in the 1990s. Its name means “advanced technology extended,” and its initials stand for “advanced technology.” Unlike AT, it is much more compact and enables the associated components to be interchanged. The connection elements have witnessed significant progress and development.",
+            "Micro ATX motherboard, measured in millimeters, are also 244 mm (size metrics will differ as per the manufacturer). This motherboard has fewer ports and slots than the Standard ATX board. Users who do not want excessive connections and subsequent upgrades, like adding more RAM, an extra GPU, or other Peripheral Component Interconnect (PCI) cards, are better suited for this kind of motherboard than others. This motherboard may be installed in any case with enough space to accommodate 244 mm by 244 mm. It can also be installed in larger cases that are compatible with Standard ATX or eXTENDED ATX motherboards.",
+            "eXtended ATX motherboard, The dimensions of this motherboard are 344 millimeters by 330 millimeters (dimensions will differ with different manufacturers). This motherboard supports a single or a twin CPU configuration and has up to eight RAM slots. Additionally, it has a higher number of PCIe (where e is for Express) and PCI slots, which may be used to add PCI cards for a wide range of applications. Workstations and servers are both able to use this software. There is sufficient room on all eATX motherboards, making them ideal for desktop computers, thanks to the significant space provided for airflow and the attachment of various components.",
+            "Flex ATX motherboard, do not enjoy the same degree of popularity as their ATX Form Factor counterparts. They are the ones within the ATX family that are considered the most compact. They were designed to occupy a minimal amount of space and had a minimal price tag. Flex ATX is a modification of mini ATX that Intel created between 1999-2000. It is a motherboard standard.",
+            "BTX motherboard Balanced technology extended, abbreviated as BTX, is a strategy developed to fulfill the requirements of emerging technologies, which call for increased power consumption and, as a result, emanate more heat. During the middle of the 2000s, Intel ceased the future production of BTX boards to concentrate on low-power CPUs.",
+        ],
+    },
+    {
+        id: 2,
+        name: "RAM",
+        description: "For up to 64GB DDR4 flash speed RAM's, Designed for fast performance and gaming experties.",
+        image: "https://c4.wallpaperflare.com/wallpaper/860/946/365/pc-gaming-motherboards-msi-computer-wallpaper-preview.jpg",
+        alt:"pic2",
+        agent: "Dr Brown H",
+        definition:  "The full form of RAM is Random Access Memory. The information stored in this type of memory is lost when the power supply to the PC or laptop is switched off. The information stored in RAM can be checked with the help of BIOS. It is generally known as the main memory or temporary memory or cache memory or volatile memory of the computer system. The history of RAM started with FPM-(Fast page mode RAM) invated in 1990 to DDR (Double Data Rate) invated in 2000 up to DDR4 invated in 2012.",
+        types: [
+            "4GB of RAM is the bare minimum memory needed to run a base computer model.",
+            "8GB of RAM is the amount of memory we recommend for casual computer users.",
+            "16GB of RAM is the amount of memory we recommend for intermediate users looking for extra speed and smooth functioning. ",
+            "32GB of RAM is the amount of memory we recommend for serious gamers, engineers, scientists, and entry-level multimedia users. ",
+            "64GB of RAM is typically recommended for top-end users. If you’re a professional user of RAM-intensive programs, like AAA games running at the highest refresh rate and resolution, 3D modelling applications.",
+        ],
+    },
+    {
+        id: 3,
+        name: "CPU",
+        description: "Acknowledge the Quad-core vs Dual-core processor performance and functionality. ",
+        image: "https://c4.wallpaperflare.com/wallpaper/25/377/176/microchip-cpu-robot-leds-wallpaper-preview.jpg",
+        alt:"pic3",
+        agent: "Professor Intel",
+        definition:"Originally, CPUs had a single processing core. Today’s modern CPU consists of multiple cores that allow it to perform multiple instructions at once, effectively cramming several CPUs on a single chip. Most CPUs sold today have two or four cores. Six cores are considered mainstream, while more expensive chips range from eight to a massive 64 cores. For Intel CPUs, that means 8th-, 9th-, or 10th-generation chips. You can determine their generation by the product name. For instance, the Core i7-6820HK is an older 6th-generation chip, while the Core i5-10210U is a newer 10th-generation chip.",
+        types: [
+            "Core i3  Standard use.",
+            "Core i5 Multi-tasking.",
+            "Core i7 Content creation & High Refresh rate gaming.",
+            "Core i9  Ultimate experience & best intel processor for gaming.",
+            "A dual-core processor is a CPU that has two processing units in one integrated circuit. The cores work simultaneously to achieve a much faster operating speed than a single-core processor.Dual-core CPUs were introduced mainly with the purpose of improving performance and reducing the amount of heat generated by distributing the workload across two units.",
+            "A quad-core processor is a CPU that has four processing units in a single integrated circuit. The cores operate simultaneously in conjunction with other circuits.Faster overall than single-core and dual-core processors, especially when running multiple programs simultaneously.Usually consumes more power than a dual-core processor, shortening the battery life of portable devices."
+        ],
+    },
+]
