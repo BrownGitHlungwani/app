@@ -306,6 +306,17 @@ h4{
   box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px #8888;
   border-radius: 10px;
 }
+.Blog_gridholder a{
+  color: #213547;
+}
+.Oneblog_content{
+  text-align: left;
+  margin-left: 1rem;
+  width: 83.4rem;
+}
+.Oneblog_content p{
+  font-weight: 500;
+}
 /*================================================Promo=====================================================*/
 .Promopage .logout_button{
   position: absolute;
