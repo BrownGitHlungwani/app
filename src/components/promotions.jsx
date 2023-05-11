@@ -15,7 +15,6 @@ export function Promo() {
     return(
         <div className="Promopage">
             <button onClick={LogOut} className="logout_button">Log out</button>
-
             <h1>Promotions</h1>
             <h4>Your Promo gift for the season</h4>
         </div>
