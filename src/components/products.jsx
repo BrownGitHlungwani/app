@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link} from "react-router-dom"
 import { Blog_grid } from './Data/blog_grid';
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "./Firebase/firebase";
 
 export function Products(){
   const[showInput, setShowinput] = useState(false);
@@ -8,6 +10,17 @@ export function Products(){
   function displaysearch(){
     setShowinput(!showInput)
   }
+  const colRef = collection(db, 'clients');
+  getDocs(colRef).then((snapshot)=>{
+      let client = []
+      snapshot.docs.map((doc)=>{
+        client.push({...doc.data(), id: doc.id})
+      })
+      console.log(client)
+  }).catch((err)=>{
+    console.log(err.message)
+  })
+
   return(
     <div className='Products_body'>
       <div className='icon_shop_search_holder'>
@@ -27,6 +40,11 @@ export function Products(){
             </div>
           ))
         } 
+      </div>
+      <div>
+        {
+          
+        }
       </div>
     </div>
   );

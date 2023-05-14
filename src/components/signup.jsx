@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth } from "./Firebase/firebase";
+import { auth} from "./Firebase/firebase";
 
 let nextId = 0;
 
@@ -36,13 +36,9 @@ export const Signup = () => {
             setEmail('');
             setPassword('');
             setCpassword('');
-
             alert( name + " your signup is successfull");
-
             await createUserWithEmailAndPassword(auth, email, password);
-
-            localStorage.setItem("info",JSON.stringify(nextInfo));
-            
+            localStorage.setItem("info",JSON.stringify(nextInfo)); 
         } else {
             alert("Your passwords don't match. Please type the same password again.");
         }
