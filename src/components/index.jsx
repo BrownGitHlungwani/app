@@ -40,7 +40,7 @@ export function Home() {
         <li><Link to={'https://faq.whatsapp.com/425247423114725/?helpref=uf_share'}><img src={"/whatsapp.png"} alt='icon3' width={27} height={27}/></Link></li>
         <li><Link to={'https://www.linkedin.com/in/nkateko-hlungwani-03a689254'}><img src={"/linkedin.png"} alt='icon3' width={27} height={27}/></Link></li>
       </ul>
-      <div className='imager'><img src="https://i.pinimg.com/564x/e4/29/ba/e429bac6e281d4ead9c6b78eb15bc89c.jpg" alt='pic' width={480} height={505}/></div>
+      <div className='imager'><img src={"/tower.jpg"} alt='pic' width={480} height={505}/></div>
     </div>
   );
 }
