@@ -5,7 +5,7 @@ import { db } from './Firebase/firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { useEffect, useState } from "react";
 
-export function Promo() {
+export function Promo () {
     const redirectback = useNavigate();
     const[clients, setClients] = useState([]);
 
@@ -18,8 +18,7 @@ export function Promo() {
     }
     useEffect(()=>{
         ;(async()=>{
-          const colRef = collection(db, 'clients')
-          const snapshots = await getDocs(colRef)
+          const snapshots = await getDocs(collection(db, 'clients'))
           const docs = snapshots.docs.map(doc => {
             const data = doc.data()
             data.id = doc.id
@@ -35,11 +34,13 @@ export function Promo() {
             <button onClick={LogOut} className="logout_button">Log out</button>
             <h1>Promotions</h1>
             <h4>Your Promo gift for the season</h4>
+            <div>
             {
-               clients.map((client)=>{
-                 <div key={client.id}>{...clients}</div>
+                clients.map((user)=>{
+                 <div key={clients.id}>{clients}</div>
                })
             }  
+            </div>
         </div>
     );
 }
