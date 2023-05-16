@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Signup } from "./Barrels/barrel"
 import { auth } from "./Firebase/firebase"
 import { signInWithEmailAndPassword } from "firebase/auth"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -32,7 +32,8 @@ export const Login = () => {
                 /><img src={"/email.png"} alt="icon" width={35} height={35} className="emailicon"/><br/>
                 <input 
                   type="password" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} required
-                /><img src={"/protect.png"} alt="icon" width={35} height={35} className="lockicon"/><br/>  
+                /><img src={"/protect.png"} alt="icon" width={35} height={35} className="lockicon"/><br/> 
+                <p><Link to={'/resetP'}>Forgot password?</Link></p> 
                 <button type="submit">Log in</button>
             </form>
             <div><Signup/></div>

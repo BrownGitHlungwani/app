@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, Blog, About, Products, Login, Promo, OneBlog} from './Barrels/barrel';
+import { Home, Blog, About, Products, Login, Promo, OneBlog, Forgotpassword } from './Barrels/barrel';
 import { NavigationComponent } from './NavigationComponents';
 
 export function Display() {
@@ -15,6 +15,7 @@ export function Display() {
         <Route path='/products' element={<Products />}/>
         <Route path='/login' element={<Login />}/>
         <Route path='/promotions' element={<Promo/>}/>
+        <Route path='/resetP' element={<Forgotpassword/>}/>
       </Routes>
     </>
   );

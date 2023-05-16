@@ -3,14 +3,15 @@ import {getAuth} from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyB8oH7oNknbf4mIQe-QKaxmSviNnJBOzig",
-  authDomain: "gadgetshub-f21e9.firebaseapp.com",
-  projectId: "gadgetshub-f21e9",
-  storageBucket: "gadgetshub-f21e9.appspot.com",
-  messagingSenderId: "913545954076",
-  appId: "1:913545954076:web:4f960096f342e269f1f0d9"
-};
+export const env= import.meta.env
+export const firebaseConfig = {
+  apiKey:env.VITE_REACT_FIREBASE_API_KEY,
+  authDomain:env.VITE_REACT_FIREBASE_AUTH_DOMAIN,
+  projectId:env.VITE_REACT_FIREBASE_PROJECT_ID,
+  storageBucket:env.VITE_REACT_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:env.VITE_REACT_FIREBASE_MESSEGING_SENDER_ID,
+  appId:env.VITE_REACT_FIREBASE_APP_ID,
+}
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

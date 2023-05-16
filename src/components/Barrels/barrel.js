@@ -6,5 +6,6 @@ export * from '../login'
 export * from '../signup'
 export * from '../promotions'
 export * from '../one_blogContent'
+export * from '../resetpassword'
 
 
