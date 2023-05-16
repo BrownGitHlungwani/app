@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth} from "./Firebase/firebase";
+import { auth, db} from "./Firebase/firebase";
+import { addDoc, collection } from "firebase/firestore";
 
 let nextId = 0;
 
@@ -38,24 +39,16 @@ export const Signup = () => {
             setCpassword('');
             alert( name + " your signup is successfull");
             await createUserWithEmailAndPassword(auth, email, password);
-            localStorage.setItem("info",JSON.stringify(nextInfo)); 
+            await addDoc(collection(db, 'clients'),{
+                name: name,
+                surname: surname,
+                contact: contact,
+                email: email,
+            });
         } else {
             alert("Your passwords don't match. Please type the same password again.");
         }
     }
-
-    const deleteItem = () => {
-        const item = info.id;
-        localStorage.removeItem('info', JSON.stringify(item));
-    }
-
-    useEffect(()=>{
-        const store = localStorage.getItem("info");
-        if(store){
-            setInfo(JSON.parse(store));
-            console.log(store);
-        }
-    },[]);
 
     return(
         <div>
@@ -86,18 +79,8 @@ export const Signup = () => {
                   type="password" placeholder="Confirm Password" required
                   value={cpassword} onChange={e=>setCpassword(e.target.value)}
                 /><br/>
-
                 <button type="submit">Sign up</button>
             </form>
-
-            <ul className="NewUser">
-               {info.map(list => (
-                   <li key={list.id}>{list.name} {list.surname} {list.contact} {list.email} {''}
-                      <button onClick={deleteItem} className="ClearJson">Delete</button>
-                   </li>  
-                ))} 
-            </ul>
-            
         </div>
     );
 }
